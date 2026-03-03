@@ -18,11 +18,10 @@ export function CatImage({ url }: CatImageProps) {
 
     return (
         <div className={styles.page}>
-            <button className={styles.button} onClick={refreshImage}>ほかのにゃんこも見る</button>
+            <button className={styles.button} onClick={refreshImage}>One more cat!</button>
             <div className={styles.frame}>
                 {imageUrl && <img src={imageUrl} className={styles.img} />}
             </div>
-            
         </div>
     )
 }
